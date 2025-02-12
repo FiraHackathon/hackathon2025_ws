@@ -2,7 +2,7 @@ services:
   base:
     build: # use tirrex_workspace image but add the host user in it
       dockerfile_inline: |
-        FROM gitlab-registry.irstea.fr/romea_projects/tirrex/tirrex_workspace:hackathon
+        FROM ghcr.io/tirrex-roboterrium/tirrex_workspace:hackathon
         RUN groupadd -g ${GID-} $USER && \
             useradd -u ${UID-} -g ${GID-} -s /bin/bash -d $HOME -m -G dialout $USER
     image: hackathon2025_ws:$USER  # add username to avoid image collision on multi-user systems

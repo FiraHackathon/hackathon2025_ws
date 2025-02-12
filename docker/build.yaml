@@ -1,6 +1,6 @@
 services:
   devel:
-    image: gitlab-registry.irstea.fr/romea_projects/tirrex/tirrex_workspace:hackathon
+    image: ghcr.io/tirrex-roboterrium/tirrex_workspace:hackathon
     build:
       context: .
       target: dever
